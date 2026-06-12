@@ -45,13 +45,13 @@ def filtrar_e_ordenar(lista_valores):
 
 ler_valores()
 
-saldo, taxa = analisar_carteira(transacoes)
-prejuizos_ordenados = filtrar_e_ordenar(transacoes)
+saldo, lucro = analisar_carteira(transacoes)
+prejuizos = filtrar_e_ordenar(transacoes)
 
 
-print(f"Saldo Final Acumulado: R$ {saldo:.2f}")
-print(f"Taxa de Dias Lucrativos: {taxa:.1f}%")
-print(f"Prejuízos (do pior para o melhor): {prejuizos_ordenados}")
+print(f"Saldo: R$ {saldo:.2f}")
+print(f"Dias Lucrativos: {lucro:.1f}%")
+print(f"Prejuízos: {prejuizos}")
 
 
 
